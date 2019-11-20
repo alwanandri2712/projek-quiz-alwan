@@ -1,4 +1,4 @@
-    #!/usr/bin/python
+#!/usr/bin/python
 #Author:Alwan Putra & Gunawan Cipta
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
@@ -6,8 +6,7 @@
 #https://www.gataungoding.id
 #thanks to member:androsec1337 cyber team
 
-if ():
-    pass
+
 R = '\033[31m' # Red
 N = '\033[1;37m' # White
 G = '\033[32m' # Green
