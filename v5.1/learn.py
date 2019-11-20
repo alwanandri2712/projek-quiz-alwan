@@ -1,5 +1,6 @@
 #!/usr/bin/python
-#Author:Alwan Putra & meqi
+#branch testing
+#Author:Alwan Putra 
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
 #hargailah sang pencipta :v
