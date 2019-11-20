@@ -1,4 +1,4 @@
-    #!/usr/bin/python
+#!/usr/bin/python
 #Author:Alwan Putra & Gunawan Cipta
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
