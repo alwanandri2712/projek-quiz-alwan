@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#Author:Alwan Putra & Gunawan Cipta
+#Author:Alwan Putra & Gunawan Cipta ppq
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
 #hargailah sang pencipta :v
