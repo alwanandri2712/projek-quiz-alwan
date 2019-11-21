@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #ini branch cipt
+#wewe
 #Author:Alwan Putra & Gunawan Cipta ppq
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
