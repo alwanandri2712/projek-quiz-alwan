@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#ini branch cipt
 #Author:Alwan Putra & Gunawan Cipta ppq
 #VERSI 5.0
 #MAU RECODE?TAU DIRI
