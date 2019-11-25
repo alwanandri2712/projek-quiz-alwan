@@ -186,8 +186,6 @@ def soal1_tkj():
     print("  e. 000.0000.0000.00000 ")
     jawaban1 = str(input(" Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -215,8 +213,6 @@ def soal2_tkj():
     print("  e. LAN ")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -243,8 +239,6 @@ def soal3_tkj():
     print("  e. 000.0000.0000.00000")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -271,8 +265,6 @@ def soal4_tkj():
     print("  e. Client Server")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -299,8 +291,6 @@ def soal5_tkj():
     print("  e. Three")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -339,8 +329,6 @@ def soal1_mm():
     print("  e. elemen air dan api okwokw")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -368,8 +356,6 @@ def soal2_mm():
     print("  e. Film dan cetak ")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -397,8 +383,6 @@ def soal3_mm():
     print("  e. Bentuk Algoritma")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -425,8 +409,6 @@ def soal4_mm():
     print("  e. Abang Tampan ")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -453,8 +435,7 @@ def soal5_mm():
     print("  e. Membuat Youtuber")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
+
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -646,7 +627,6 @@ def back_home():
 
 
 def total_point():
-    global point
     print("Total Point Kamu Adalah: ", point)
 
     if point >= 75:
@@ -667,7 +647,6 @@ def total_point():
 #---------------------------------------------------------------#
 
 def loginauth(username, password, token):
-    global url
     r = requests.get(url)
     ra = r.json()
     valid = False
@@ -842,7 +821,6 @@ def session():
 
 
 def update_nilai_murid():
-    global url
     a = input('masukkan Nama:')
     b = input('masukkan Nilai:')
     data = { 'username' : (a), 'password': (b) }
