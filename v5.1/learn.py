@@ -42,8 +42,6 @@ def soal1_rpl():
     print("  e. Perangkat keras")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -70,8 +68,6 @@ def soal2_rpl():
     print("  e. MBAH GOOGLE")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -98,8 +94,6 @@ def soal3_rpl():
     print("  e. MBAH GOOGLE")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -126,8 +120,7 @@ def soal4_rpl():
     print("  e. MBAH YOUTUBE")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
+
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -154,8 +147,7 @@ def soal5_rpl():
     print("  e. Tanya Google")
     jawaban1 = str(input("Jawaban => "))
 
-    global point
-    global form_jawaban_benar
+
     if jawaban1 == correct_answer:
         time.sleep(1)
         print('-'*30)
@@ -734,22 +726,6 @@ def login():
         else:
             print('input yg bener')
 
-
-
-def daftar():
-    global url
-    time.sleep(1)
-    print ("-"*31)
-    a = input('masukkan username: ')
-    b = input('masukkan password: ')
-    data = { 'username' : (a), 'password': (b), }
-    r = requests.post(url, data = data)
-    if r.status_code == 200:
-        print('sukses daftar,silahkan kontak admin untuk mendapatkan token(aktivasi akun)')
-    elif r.status_code == 404:
-        print('gagal daftar')
-
-
 def token_kelas():
     token = input("masukkan token kelasmu:")
     if token == "RPL01":
@@ -762,13 +738,24 @@ def token_kelas():
     else:
         print("token yang dimasukkan salah silahkan coba lagi:v")
 
-#------------------------------------#
+def daftar():
+    time.sleep(1)
+    print ("-"*31)
+    a = input('masukkan username: ')
+    b = input('masukkan password: ')
+    data = { 'username' : (a), 'password': (b), }
+    r = requests.post(url, data = data)
+    if r.status_code == 200:
+        print('sukses daftar,silahkan kontak admin untuk mendapatkan token(aktivasi akun)')
+    elif r.status_code == 404:
+        print('gagal daftar')
+
 def list_nilai_murid():
-    global url
     r = requests.get(url)
     ra = r.json()
     for data in ra:
-        print(data['username'])
+        print(data['username'],"|",data['kelas'],"|",data['nilai'])
+#------------------------------------#
 
 
 def list_kkm():
